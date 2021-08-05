@@ -6,6 +6,3 @@ RUN conda install -c conda-forge \
     conda clean -a -q -y
 
 COPY --chown=${NB_UID} demo.ipynb $HOME
-
-# Make JupyterLab the default for this application
-ENV JUPYTER_ENABLE_LAB=yes
